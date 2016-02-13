@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """ Functions for characterization of the noise of a signal """
 
 from numpy import *
