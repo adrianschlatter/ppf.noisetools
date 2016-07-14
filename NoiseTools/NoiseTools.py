@@ -356,13 +356,15 @@ def rms(signal):
 def ADC_SNR(Nbits):
     """Returns the signal-to-noise ratio (in dB) of an ideal Nbits-bit
     analog-to-digital converter."""
-    return 6.02*Nbits+1.76
+
+    return 6.0206 * Nbits + 1.7609
 
 
 def ADC_NoiseFloor(Nbits, fsampling):
     """Returns the noise floor (in dBc/Hz) of an ideal Nbits-bit
     analog-to-digital converter with a sampling rate of fsampling Hz."""
-    return -6.02*Nbits-1.76-10*log10(0.5*fsampling)
+
+    return -6.0206 * Nbits - 1.7609 - 10 * log10(0.5 * fsampling)
 
 
 def unique(data):
