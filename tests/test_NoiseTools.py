@@ -5,8 +5,6 @@ Unit tests for NoiseTools
 @author: Adrian Schlatter
 """
 
-import sys
-sys.path.append('..')
 import unittest
 import NoiseTools as nt
 import numpy as np
