@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 """ Functions for characterization of the noise of a signal """
 
-from numpy import *
-from numpy.fft import *
+from numpy import array, fromstring, transpose, log, arange, zeros, average, \
+                  exp, arctan, sqrt, sign, pi, concatenate, argmax, add, \
+                  log10, diff, cos, ones, linalg, newaxis, compress, c_
+from numpy.fft import fft, ifft
+from numpy.random import randn
 from numpy import hanning as numpy_hanning
 import sys
 import struct
@@ -132,7 +135,7 @@ def resample(x, y, N, type='lin'):
         length of N points, or len(array) if len(array)<N."""
 
     if len(x) != len(y):
-        print ("x and y need to be equally long")
+        print("x and y need to be equally long")
         return []
 
     if len(y) <= N:
