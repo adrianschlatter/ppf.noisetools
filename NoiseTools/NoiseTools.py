@@ -127,7 +127,7 @@ def centercrop2power2(array):
 
         l = 2**int(log(len(array))/log(2))
         l0 = len(array)
-        return array[l0/2-l/2:l0/2+l/2]
+        return array[l0 // 2 - l // 2:l0 // 2 + l // 2]
 
 
 def resample(x, y, N, type='lin'):
@@ -255,7 +255,7 @@ def pc_hanning(Npoints):
 
 def powerspectrum(signal):
     """ Powerspectrum of 'signal' in units of ['signal']^2/df"""
-    return abs(spectrum(signal)[:len(signal)/2])**2
+    return abs(spectrum(signal)[:len(signal) // 2])**2
 
 
 def phasor(signal):

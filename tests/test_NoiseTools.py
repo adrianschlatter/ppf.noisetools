@@ -33,7 +33,7 @@ class TestSpectralTools(unittest.TestCase):
         self.pspec = nt.powerspectrum(self.sig)
 
     def test_spectrum(self):
-        expected = np.zeros(16.)
+        expected = np.zeros(16, dtype='float')
         expected[[1, -1]] = 0.5
         delta = self.spec - expected
         self.assertAlmostEqual(np.sum(delta**2), 0)
@@ -43,7 +43,7 @@ class TestSpectralTools(unittest.TestCase):
         self.assertAlmostEqual(np.sum(delta**2), 0)
 
     def test_powerspectrum(self):
-        expected = np.abs(self.spec[:len(self.spec) / 2])**2
+        expected = np.abs(self.spec[:len(self.spec) // 2])**2
         delta = self.pspec - expected
         self.assertAlmostEqual(np.sum(delta**2), 0)
 
