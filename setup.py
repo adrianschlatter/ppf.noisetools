@@ -15,13 +15,13 @@ setup(
     version='0.3.1.dev0',
     description='Tools for noise analysis',
     long_description=long_description,
+    long_description_content_type='text/x-rst',
 
     # The project's main homepage.
     url='https://github.com/adrianschlatter/NoiseTools',
 
     # Author details
     author='Adrian Schlatter',
-    author_email='schlatter@phys.ethz.ch',
 
     # Choose your license
     license='Revised BSD',    classifiers=[
@@ -32,7 +32,7 @@ setup(
         'Topic :: Utilities',
         'Intended Audience :: Science/Research',
         'Operating System :: OS Independent',
-        'Programming Language :: Python :: 2.7'],
+        'Programming Language :: Python :: 3'],
 
     # What does your project relate to?
     keywords='python math noise signal',
