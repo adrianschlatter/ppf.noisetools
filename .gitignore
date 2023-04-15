@@ -1,5 +1,23 @@
-*.pyc
-/dist/
-/build/
-/*.egg-info
-/.tox/
+# general things to ignore
+build/
+dist/
+*.egg-info/
+*.egg
+*.py[cod]
+__pycache__/
+*.so
+*~
+
+# due to using tox and pytest
+.tox
+.cache
+
+# due to using coverage
+.coverage
+htmlcov/
+
+# due to vscode:
+.vscode/
+
+# due to Mac:
+**/.DS_Store

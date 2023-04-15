@@ -6,7 +6,7 @@ Unit tests for NoiseTools
 """
 
 import unittest
-import NoiseTools as nt
+import ppf.NoiseTools as nt
 import numpy as np
 
 

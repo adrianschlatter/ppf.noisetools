@@ -6,7 +6,7 @@ Tools to analyze noise.
 """
 
 from .NoiseTools import binfile2array, array2binfile, lvm2array, \
-                        WaveJetCSV2array, WFM2array, textfile2array, \
+                        WaveJetCSV2array, textfile2array, \
                         text2array, get_dt, crop2power2, centercrop2power2, \
                         resample, resamp, spectrum, ispectrum, make_f, \
                         pc_hanning, powerspectrum, phasor, phase, amplitude, \
