@@ -5,7 +5,7 @@ Tools to analyze noise.
 @author: Adrian Schlatter
 """
 
-from .NoiseTools import binfile2array, array2binfile, lvm2array, \
+from .noisetools import binfile2array, array2binfile, lvm2array, \
                         WaveJetCSV2array, textfile2array, \
                         text2array, get_dt, crop2power2, centercrop2power2, \
                         resample, resamp, spectrum, ispectrum, make_f, \
